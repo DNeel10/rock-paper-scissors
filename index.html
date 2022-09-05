@@ -5,9 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="rps.js"></script>
+    <script src="rps.js" defer></script>
+    <link rel="stylesheet" href ="styles.css">
 </head>
+
 <body>
-    
+    <div class = "container"> 
+        <div class = "title">Rock, Paper, Scissors!</div>
+
+        <div class = "selections">
+            <div id ='rock' class ="selection">Rock</div>
+            <div id ='paper' class ="selection">Paper</div>
+            <div id ='scissors' class ="selection">Scissors</div>
+        </div>
+        <div class = "battle">
+            <div class="choice">
+                <div class="choiceBox playerChoiceBoxTitle">Player Selected:</div>
+                <div id="playerChoiceOption"></div>
+            </div>
+            <div class="choice">
+                <div class="choiceBox computerChoiceBoxTitle">Computer Selected:</div>
+                <div id="computerChoiceOption"></div>
+            </div> 
+        </div>
+        <div class="resultMessage"></div>
+        <div class = "results">
+            <h2> Current Score:</h2>
+            <div class = "scorebox scorebox-grid"> 
+                <div class = "scoreBox playerScoreBox"> 
+                    <div class = "scoreHeading"> Player Score</div>
+                    <div id="playerScoreDisplay" Class = "scoreDisplay"> - </div>
+                </div>
+                <div class = "scoreBox computerScoreBox">
+                    <div class = "scoreHeading"> Computer Score</div>
+                    <div id="computerScoreDisplay" Class = "scoreDisplay"> - </div>
+                </div>
+            </div>  
+        </div>
+        <div class="reset">Reset Game?</div>
+    </div>
 </body>
 </html>
