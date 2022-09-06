@@ -5,13 +5,16 @@ body {
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
     margin: 32px;
-
 }
 
+img {
+    height: 100px;
+    width: 87px;
+}
 .title {
     box-sizing: border-box;
     padding: 32px;
@@ -24,32 +27,60 @@ body {
     margin-bottom: 32px;;
 }
 
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
 .selections {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 24px;
     gap: 16px;
-    flex: auto;
 }
 
 #rock {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#rockDiv {
+    padding: 0px;
+    height: 125px;
+    width: 125px;
+}
+
+#paperDiv {
+    padding: 0px;
+    height: 125px;
+    width: 125px;
+}
+
+#scissorsDiv {
+    padding: 0px;
+    height: 125px;
+    width: 125px;
 }
 
 #paper {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 #scissors {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 100%;
+    min-height: 100%;
 }
 .selection {
     display: flex;
